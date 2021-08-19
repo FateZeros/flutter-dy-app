@@ -8,30 +8,14 @@ import './pages/home/index.dart';
 class FateDyApp extends StatelessWidget {
   // 路由路径匹配
   Route<dynamic> _generateRoute(RouteSettings settings) {
-    // Map<String, WidgetBuilder> routes = {
-    //   '/': (BuildContext context) => MyHomePage(title: 'Demo'),
-    //   '/login': (BuildContext context) => LoginPage(),
-    // };
-    // var widget = '/';
-    // if (routes[settings.name]) {
-    //   widget = routes[settings.name];
-    // }
-    // // const widget = routes[settings.name];
-
-    // return MaterialPageRoute<void>(
-    //   settings: settings,
-    //   builder: (BuildContext context) {
-    //     return widget(context);
-    //   },
-    // );
-    print('1111111111');
+    print('==== 路由跳转 ===');
     print(settings.name);
-    print('22222');
+
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
             builder: (context) => MyHomePage(title: 'Demo'));
-      case 'login':
+      case '/login':
         return MaterialPageRoute(
             builder: (context) => Scaffold(body: Text('Not found1')));
       default:

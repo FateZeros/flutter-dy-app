@@ -83,9 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // onPressed: _incrementCounter,
         onPressed: () {
           //导航到新路由
-          // Navigator.push(context, )
-          print(Navigator);
-          Navigator.pushNamed(context, "login");
+          Navigator.pushNamed(context, "/login");
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
