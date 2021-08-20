@@ -13,8 +13,7 @@ class FateDyApp extends StatelessWidget {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(
-            builder: (context) => MyHomePage(title: 'Demo'));
+        return MaterialPageRoute(builder: (context) => MyHomePage(title: '主页'));
       case '/login':
         return MaterialPageRoute(
             builder: (context) => Scaffold(body: Text('Not found1')));
