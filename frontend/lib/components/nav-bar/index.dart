@@ -33,7 +33,7 @@ class _DyNavBarState extends State<DyNavBar> with DYBase {
 
   Widget _bottomIcon(path) {
     return Padding(
-        padding: EdgeInsets.only(bottom: dp(4)),
+        padding: EdgeInsets.only(bottom: dp(40)),
         child: Image.asset(
           path,
           width: 25,
